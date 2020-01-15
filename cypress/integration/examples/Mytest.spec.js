@@ -9,8 +9,8 @@ describe("Tester", ()=>{
         // Эти переменые следует изменить на свои значения !!!!
         let login,password;
 
-            login = "fraidx@mail.ru";
-            password = "09.08.07.06.Dd";
+            login = "Your login";
+            password = "Your password";
 
         cy.get("input[name=login]")
             .type(login,{delay: 50})
@@ -26,8 +26,8 @@ describe("Tester", ()=>{
     // Эти переменые следует изменить на свои значения !!!!
         let Name,Mail,text;
 
-            Name = "Daniel";
-            Mail = "triplicatesouls@gmail.com";
+            Name = "YourName";
+            Mail = "YourMailgmail.com";
             text = "Текст для рассылки"
 
         cy.get('a[href="/campaigns"]').click() // Переходим по ссылке
@@ -70,8 +70,8 @@ describe("Tester", ()=>{
 
             cy.get(':nth-child(3) > .WizardStep > .WizardStep-wrapper > .WizardStep-header > .WizardStep-panel > .Button > .Button-wrapper').click()
                 cy.get(':nth-child(2) > .GalleryCards-content > :nth-child(2) > .GalleryCard-preview > .GalleryCard-previewContent > .GalleryCard-shadow').click()
-                    cy.get(':nth-child(5) > .ui-button').click()
-        
+                   cy.wait(500) // При первоначальном запуске теста, при плохой прогрузке ругается на следующий элемент, ожидание исправляет это 
+                        cy.get(':nth-child(5) > .ui-button').click()
 
 
         // отправляем рассылку

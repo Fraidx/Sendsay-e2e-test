@@ -1,6 +1,10 @@
 # Sendsay-e2e-test
-It`s test task for Sendsay. This is the first time I ran e2e tests and used the Cypress library
+ ### Description
+ This projects is test task for Sendsay company. This is the first time I've done automated tests with Cypress.io
+ 
+ Tests are working, but execution is low
 
----
+Thank you for the interesting task it was a good practice
 
-
+  ### Author 
+  (C) 2020 Sergeev Danil | telegram: @triplicates
